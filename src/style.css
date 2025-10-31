@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+@import "tailwindcss";
+ 
+
+
+
+@layer base{
+    body{
+        font-family: "Noto Serif Bengali", serif;
+         color: black;
+         font-size: 15px;
+         font-weight: 25px;
+         font-style: normal;
+         background-color: #ffff;
+
+        
+    }
+
+     @media (min-width: 768px) {
+          body{
+            font-size: 20px;
+          }
+          
+         }
+}
+
+
+ @theme {
+  --color-primary: #2E7D32;
+  --color-cardbg:#FFFFFF;
+  --color-border:#E5E7EB;
+  
+}
+
+
+@layer components{
+  .hover{
+    @apply hover:bg-primary bg-[#d97706]
+  }
+}
+ 
