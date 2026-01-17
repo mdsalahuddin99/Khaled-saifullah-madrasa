@@ -1,52 +1,61 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/shuvohabibi/kalpurush-fonts@master/kalpurush.css');
 @import "tailwindcss";
- 
 
+@layer base {
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #0F3D4E;
+    --card-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --nav-bg: #ffffff;
+  }
 
+  body {
+    font-family: 'Kalpurush', 'Hind Siliguri', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    background-image: url('/bg-pattern.png');
+    background-repeat: repeat;
+    background-size: 400px;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-@layer base{
-    body{
-        font-family: "Noto Serif Bengali", serif;
-         color: black;
-         font-size: 15px;
-         font-weight: 25px;
-         font-style: normal;
-         background-color: #ffff;
-
-        
+  @media (min-width: 768px) {
+    body {
+      font-size: 20px;
     }
-
-     @media (min-width: 768px) {
-          body{
-            font-size: 20px;
-          }
-          
-         }
+  }
 }
 
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
 
- @theme {
+.font-kalpurush {
+  font-family: 'Kalpurush', sans-serif;
+}
+
+@theme {
   --color-primary: #2E7D32;
-  --color-cardbg:#FFFFFF;
-  --color-border:#E5E7EB;
-  
+  --color-cardbg: var(--card-bg);
+  --color-border: var(--border-color);
 }
 
-
-@layer components{
-  .hover{
-    @apply hover:bg-primary bg-[#d97706]
-  }
-
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
-  
+@layer components {
   .animate-marquee {
     display: inline-block;
     animation: marquee 25s linear infinite;
   }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
- 

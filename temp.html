@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css">
+
+  <title>jamia-website</title>
+</head>
+
+<body>
+
+
+
+  <section class="w-full py-12 px-2 md:max-w-[1450px] md:mx-auto md:px-0">
+    <p class="text-[#0F3D4E] font-black text-xl md:text-3xl text-center mt-0 tracking-wide">
+      শাইখুল হাদিস আল্লামা হাসান জামিল (দাঃবাঃ) এর প্রতিষ্ঠিত
+    </p>
+  </section>
+
+  <nav class="bg-white sticky top-0 z-50 shadow-md border-b border-gray-200">
+    <div class="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex-shrink-0 flex items-center group cursor-pointer">
+          <img src="/logo ai.jpg" alt="Logo"
+            class="h-14 w-14 md:h-16 md:w-16 object-contain transform group-hover:rotate-6 transition-transform duration-300">
+          <div class="ml-3 hidden sm:block">
+            <h1 class="text-[#0F3D4E] text-xl md:text-2xl font-black leading-none uppercase">
+              মারকাযুত তারবিয়াহ <span class="text-[#A52A2A]">বাংলাদেশ</span>
+            </h1>
+            <p class="text-[10px] md:text-xs text-gray-600 font-bold tracking-[0.2em] mt-1 uppercase font-outfit">
+              Markazut Tarbiyah Bangladesh
+            </p>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html"
+            class="text-[#0F3D4E] hover:text-[#A52A2A] px-4 py-2 rounded-lg font-bold transition-colors">মূল
+            পাতা</a>
+
+          <a href="about.html"
+            class="text-[#0F3D4E] hover:text-[#A52A2A] px-4 py-2 rounded-lg font-bold transition-colors">পরিচিতি</a>
+
+          <a href="blog.html"
+            class="text-[#0F3D4E] hover:text-[#A52A2A] px-4 py-2 rounded-lg font-bold transition-colors">আপনার
+            জিজ্ঞাসা</a>
+
+          <a href="jamiaalbume.html"
+            class="text-[#0F3D4E] hover:text-[#A52A2A] px-4 py-2 rounded-lg font-bold transition-colors">গ্যালারি</a>
+
+
+          <a href="admition.html"
+            class="bg-[#A52A2A] text-white px-7 py-3 rounded-full font-black hover:bg-[#0F3D4E] shadow-xl shadow-red-100 transition-all active:scale-95">ভর্তি
+            ফরম</a>
+        </div>
+      </div>
+
+      <div class="lg:hidden flex items-center">
+        <button id="mobile-menu-btn" class="p-2 rounded-lg text-[#0F3D4E] hover:bg-gray-100 transition-colors">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-2xl overflow-hidden">
+      <div class="px-4 py-6 space-y-2">
+        <a href="index.html" class="block px-4 py-3 rounded-xl bg-gray-50 text-[#A52A2A] font-black">মূল পাতা</a>
+        <a href="about.html" class="block px-4 py-3 text-[#0F3D4E] font-black border-b border-gray-50">পরিচিতি</a>
+        <a href="blog.html" class="block px-4 py-3 text-[#0F3D4E] font-black border-b border-gray-50">আপনার জিজ্ঞাসা</a>
+        <a href="jamiaalbume.html"
+          class="block px-4 py-3 text-[#0F3D4E] font-black border-b border-gray-50">গ্যালারি</a>
+        <div class="pt-6 space-y-4">
+          <a href="admition.html"
+            class="block w-full text-center bg-[#A52A2A] text-white py-4 rounded-2xl font-black shadow-lg">ভর্তি ফরম</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="w-full py-4 px-0 md:max-w-[1450px] md:mx-auto md:px-0">
+    <div
+      class="relative w-full overflow-hidden shadow-2xl h-64 md:h-80 lg:h-[500px] rounded-[2.5rem] border-4 border-white">
+      <div id="image-carousel" class="flex transition-transform duration-1000 ease-in-out h-full">
+        <div class="carousel-slide min-w-full shrink-0 relative bg-cover bg-center"
+          style="background-image: url('public/01.jpg');">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F3D4E]/80 to-transparent"></div>
+          <div class="absolute flex items-center left-8 bottom-8">
+            <h2
+              class="text-white text-3xl md:text-5xl font-black border-l-8 border-[#A52A2A] pl-6 uppercase tracking-tighter font-outfit">
+              Markazut Tarbiyah</h2>
+          </div>
+        </div>
+        <div class="carousel-slide min-w-full shrink-0 relative bg-cover bg-center"
+          style="background-image: url('public/02.jpg');">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F3D4E]/80 to-transparent"></div>
+          <div class="absolute flex items-center left-8 bottom-8">
+            <h2
+              class="text-white text-3xl md:text-5xl font-black border-l-8 border-[#A52A2A] pl-6 uppercase tracking-tighter font-outfit">
+              Islamic Education</h2>
+          </div>
+        </div>
+      </div>
+
+      <button id="prev-slide"
+        class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/10 backdrop-blur-md text-white p-3 rounded-full hover:bg-[#A52A2A] transition duration-300 z-10">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button id="next-slide"
+        class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/10 backdrop-blur-md text-white p-3 rounded-full hover:bg-[#A52A2A] transition duration-300 z-10">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+          <path d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Slider Indicators -->
+      <div id="dot-indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-10"></div>
+    </div>
+  </section>
+
+  <div class="bg-[#0F3D4E] text-white py-3 overflow-hidden relative z-20 border-y-2 border-[#A52A2A]/20">
+    <div class="max-w-[1450px] mx-auto px-4 flex items-center">
+      <div
+        class="bg-[#A52A2A] px-4 py-1.5 text-xs font-black rounded-lg mr-4 shrink-0 uppercase tracking-widest animate-pulse shadow-lg">
+        নোটিশ</div>
+      <div class="overflow-hidden grow">
+        <div class="whitespace-nowrap animate-marquee inline-block font-bold">
+          <span class="mr-12 text-white/90">📢 ২০২৫ শিক্ষাবর্ষের ভর্তি কার্যক্রম চলছে! সকল বিভাগে ছাত্র ভর্তি করা
+            হচ্ছে।</span>
+          <span class="mr-12 text-white/90">📖 আগামী শুক্রবার বাদ মাগরিব জামিয়া মসজিদে বিশেষ ইসলাহী মজলিস অনুষ্ঠিত
+            হবে।</span>
+          <span class="mr-12 text-white/90">🏆 বার্ষিক পরীক্ষার ফলাফল আগামী ১০ই রজব প্রকাশিত হবে ইনশাআল্লাহ।</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HERO END -->
+
+  <!-- COMPACT MODERN STATS BAR (WHITE & COLORFUL) -->
+
+
+  <section class="relative bg-white py-12 border-b border-gray-100 overflow-hidden">
+    <div class="absolute top-0 left-0 w-32 h-32 bg-[#0F3D4E]/5 rounded-full -translate-x-16 -translate-y-16"></div>
+
+    <div class="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-gray-100">
+
+        <div
+          class="flex items-center justify-center p-6 group transition-all duration-300 hover:bg-gray-50/80 rounded-2xl lg:rounded-none">
+          <div class="flex flex-col items-center text-center space-y-3">
+            <div
+              class="w-16 h-16 bg-[#0F3D4E]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#0F3D4E] transition-all duration-500 shadow-sm shadow-[#0F3D4E]/10">
+              <svg class="w-8 h-8 text-[#0F3D4E] group-hover:text-white transition-colors" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-3xl font-extrabold text-[#0F3D4E]">২,২৩০+</h3>
+              <p class="text-sm font-bold text-[#A52A2A] uppercase tracking-widest mt-1">মোট শিক্ষার্থী</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-center p-6 group transition-all duration-300 hover:bg-gray-50/80 rounded-2xl lg:rounded-none">
+          <div class="flex flex-col items-center text-center space-y-3">
+            <div
+              class="w-16 h-16 bg-[#A52A2A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#A52A2A] transition-all duration-500 shadow-sm shadow-[#A52A2A]/10">
+              <svg class="w-8 h-8 text-[#A52A2A] group-hover:text-white transition-colors" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-3xl font-extrabold text-[#0F3D4E]">১৩০+</h3>
+              <p class="text-sm font-bold text-[#A52A2A] uppercase tracking-widest mt-1">শিক্ষক-শিক্ষিকা</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-center p-6 group transition-all duration-300 hover:bg-gray-50/80 rounded-2xl lg:rounded-none">
+          <div class="flex flex-col items-center text-center space-y-3">
+            <div
+              class="w-16 h-16 bg-[#0F3D4E]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#0F3D4E] transition-all duration-500 shadow-sm shadow-[#0F3D4E]/10">
+              <svg class="w-8 h-8 text-[#0F3D4E] group-hover:text-white transition-colors" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-3xl font-extrabold text-[#0F3D4E]">৭,০০০+</h3>
+              <p class="text-sm font-bold text-[#A52A2A] uppercase tracking-widest mt-1">উত্তীর্ণ আলেম</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-center p-6 group transition-all duration-300 hover:bg-gray-50/80 rounded-2xl lg:rounded-none">
+          <div class="flex flex-col items-center text-center space-y-3">
+            <div
+              class="w-16 h-16 bg-[#A52A2A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#A52A2A] transition-all duration-500 shadow-sm shadow-[#A52A2A]/10">
+              <svg class="w-8 h-8 text-[#A52A2A] group-hover:text-white transition-colors" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-3xl font-extrabold text-[#0F3D4E]">৮+</h3>
+              <p class="text-sm font-bold text-[#A52A2A] uppercase tracking-widest mt-1">শিক্ষা বিভাগ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--------------------------------------Student  START--------------------------------------------->
+  <!--------------------------------------Info Section START--------------------------------------------->
+
+  <!-- MODERN INTRO & MESSAGE SECTION -->
+  <section class="py-24 bg-[#fcfcfc] overflow-hidden relative">
+
+    <div class="absolute top-0 right-0 w-80 h-80 bg-[#0F3D4E]/5 rounded-full blur-3xl -mr-40 -mt-40"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#A52A2A]/5 rounded-full blur-3xl -ml-40 -mb-40"></div>
+
+    <div class="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+        <div class="h-full">
+          <div
+            class="bg-white rounded-[2rem] shadow-xl shadow-blue-900/5 border border-gray-100 p-8 flex flex-col h-full transform transition duration-500 hover:shadow-2xl">
+
+            <div
+              class="relative h-[400px] w-full rounded-2xl overflow-hidden mb-6 group shrink-0 ring-8 ring-gray-50 shadow-inner">
+              <img src="/011.jpg" alt="Mohtamim"
+                class="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-110">
+            </div>
+
+            <div class="mb-6 px-2 text-center md:text-left">
+              <h3 class="text-[#0F3D4E] text-2xl font-bold tracking-tight">মাওলানা খালেদ সাইফুল্লাহ আইয়ুবী</h3>
+              <p class="text-[#A52A2A] text-sm font-semibold mt-1 tracking-wide">মুহতামিম ও শায়খুল হাদীস</p>
+              <div class="w-16 h-1 bg-gray-100 mt-3 rounded-full mx-auto md:mx-0"></div>
+            </div>
+
+            <div class="flex flex-col grow px-2">
+              <div class="flex items-center mb-6 justify-center md:justify-start">
+                <span class="w-10 h-[2px] bg-[#A52A2A]"></span>
+                <span class="ml-3 text-[#A52A2A] font-bold tracking-[0.2em] text-xs uppercase">মুহতামিমের বাণী</span>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -top-8 -left-4 text-7xl text-[#0F3D4E]/10 font-serif">"</span>
+                <p class="text-[#0F3D4E] leading-relaxed mb-8 text-lg md:text-xl italic font-medium relative z-10">
+                  আমাদের লক্ষ্য হলো এমন এক প্রজন্ম গড়ে তোলা যারা ইলমে ও আমলে পরিপূর্ণ হবে। দ্বীনি শিক্ষার পাশাপাশি
+                  নৈতিকতা ও মানবতার সেবায় তারা হবে অগ্রগামী।
+                </p>
+              </div>
+
+              <div class="mt-auto">
+                <a href="about.html"
+                  class="inline-flex items-center justify-center px-10 py-4 bg-[#0F3D4E] text-white font-bold rounded-xl hover:bg-[#0a2b38] shadow-lg shadow-blue-900/20 transition-all group w-full md:w-max">
+                  বিস্তারিত জীবনী
+                  <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full">
+          <div
+            class="bg-white rounded-[2rem] shadow-xl shadow-red-900/5 border border-gray-100 p-10 flex flex-col h-full relative overflow-hidden">
+
+            <div class="absolute top-0 right-0 p-4">
+              <svg class="w-16 h-16 text-gray-50" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" />
+              </svg>
+            </div>
+
+            <div class="mb-8">
+              <span
+                class="inline-block px-5 py-1.5 bg-[#A52A2A]/10 text-[#A52A2A] font-bold text-xs uppercase rounded-full border border-[#A52A2A]/20 tracking-widest">পরিচিতি</span>
+            </div>
+
+            <h2 class="text-3xl lg:text-4xl font-black text-[#0F3D4E] mb-8 leading-[1.2]">
+              দ্বীনি ইলম ও উন্নত <span class="text-[#A52A2A] relative inline-block">
+                আখলাকের কেন্দ্র
+                <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 100 8" preserveAspectRatio="none">
+                  <path d="M0 7C20 7 30 1 50 1C70 1 80 7 100 7" stroke="#A52A2A" stroke-width="2" fill="none" />
+                </svg>
+              </span>
+            </h2>
+
+            <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+              <strong class="text-[#0F3D4E]">মারকাযুত তারবিয়াহ বাংলাদেশ</strong> দেশের দ্বীনি শিক্ষাঙ্গনে একটি সুপরিচিত
+              প্রতিষ্ঠান। দারুল উলূম দেওবন্দের সিলসিলাভুক্ত এই প্রতিষ্ঠানটি সুদীর্ঘ সময় ধরে জাতিকে সহীহ দ্বীনের পথের
+              দিশা দিয়ে আসছে।
+            </p>
+
+            <div class="grid grid-cols-1 gap-5 mb-10 grow">
+              <div
+                class="flex items-center p-5 bg-gray-50 rounded-2xl border border-gray-100 group hover:bg-white hover:shadow-md transition-all">
+                <div
+                  class="w-12 h-12 rounded-xl bg-[#0F3D4E] flex items-center justify-center text-white shrink-0 shadow-lg group-hover:rotate-12 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                    </path>
+                  </svg>
+                </div>
+                <div class="ml-5">
+                  <h4 class="font-bold text-[#0F3D4E] text-lg">সহীহ দ্বীনি তালীম</h4>
+                  <p class="text-sm text-gray-500 italic">ইলমে ওহীর নূর ছড়িয়ে দেওয়া</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center p-5 bg-gray-50 rounded-2xl border border-gray-100 group hover:bg-white hover:shadow-md transition-all">
+                <div
+                  class="w-12 h-12 rounded-xl bg-[#A52A2A] flex items-center justify-center text-white shrink-0 shadow-lg group-hover:rotate-12 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="ml-5">
+                  <h4 class="font-bold text-[#0F3D4E] text-lg">নৈতিক প্রশিক্ষণ</h4>
+                  <p class="text-sm text-gray-500 italic">আদর্শ মানুষ গড়ার কারিগর</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-auto">
+              <a href="about.html"
+                class="block w-full text-center px-8 py-4 bg-white text-[#0F3D4E] border-2 border-[#0F3D4E]/10 font-bold rounded-xl hover:border-[#A52A2A] hover:text-[#A52A2A] transition-all">
+                জামিয়া সম্পর্কে আরও জানুন
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font bg-white py-20">
+    <div class="max-w-[1450px] mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-black text-[#0F3D4E] mb-4 inline-block relative pb-2">
+          আমাদের বিভাগসমূহ
+          <span class="absolute bottom-0 left-0 w-full h-1 bg-[#A52A2A] rounded-full"></span>
+        </h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto mt-4">মারকাযুত তারবিয়াহ বাংলাদেশে প্রাথমিক স্তর থেকে শুরু করে
+          উচ্চতর গবেষণামূলক শিক্ষা পর্যন্ত বিভিন্ন বিভাগ রয়েছে।</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="group relative bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 p-8 flex flex-col items-center text-center overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-1.5 bg-[#A52A2A] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+          </div>
+          <div
+            class="w-16 h-16 bg-[#0F3D4E]/5 text-[#0F3D4E] rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:bg-[#0F3D4E] group-hover:text-white transition-all duration-300">
+            📖
+          </div>
+          <h3 class="text-xl font-bold text-[#0F3D4E] mb-3 group-hover:text-[#A52A2A] transition-colors">নূরানী ও মক্তব
+            বিভাগ</h3>
+          <p class="text-gray-500 mb-6 text-sm leading-relaxed">শিশুদের জন্য সহীহ কুরআন শিক্ষা, মাসনূন দোয়া ও প্রাথমিক
+            ফিকহ শিক্ষার ব্যবস্থা। সাথে বাংলা ও অংকের বুনিয়াদি শিক্ষা।</p>
+          <a href="#"
+            class="mt-auto text-[#A52A2A] font-bold hover:tracking-widest transition-all flex items-center text-sm">
+            বিস্তারিত দেখুন <span class="ml-2">→</span>
+          </a>
+        </div>
+
+        <div
+          class="group relative bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 p-8 flex flex-col items-center text-center overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-1.5 bg-[#A52A2A] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+          </div>
+          <div
+            class="w-16 h-16 bg-[#0F3D4E]/5 text-[#0F3D4E] rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:bg-[#0F3D4E] group-hover:text-white transition-all duration-300">
+            🕌
+          </div>
+          <h3 class="text-xl font-bold text-[#0F3D4E] mb-3 group-hover:text-[#A52A2A] transition-colors">হিফজুল কুরআন
+            বিভাগ</h3>
+          <p class="text-gray-500 mb-6 text-sm leading-relaxed">অভিজ্ঞ হাফেজগণের তত্ত্বাবধানে আন্তর্জাতিক মানের হিফজ
+            শিক্ষা। নিয়মিত ইয়াদ ও সবক শুনানির ব্যবস্থা।</p>
+          <a href="#"
+            class="mt-auto text-[#A52A2A] font-bold hover:tracking-widest transition-all flex items-center text-sm">
+            বিস্তারিত দেখুন <span class="ml-2">→</span>
+          </a>
+        </div>
+
+        <div
+          class="group relative bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-500 p-8 flex flex-col items-center text-center overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-1.5 bg-[#A52A2A] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500">
+          </div>
+          <div
+            class="w-16 h-16 bg-[#0F3D4E]/5 text-[#0F3D4E] rounded-2xl flex items-center justify-center mb-6 text-3xl group-hover:bg-[#0F3D4E] group-hover:text-white transition-all duration-300">
+            📚
+          </div>
+          <h3 class="text-xl font-bold text-[#0F3D4E] mb-3 group-hover:text-[#A52A2A] transition-colors">কিতাব বিভাগ
+            (জেনারেল)</h3>
+          <p class="text-gray-500 mb-6 text-sm leading-relaxed">ইবতিদাইয়াহ থেকে দাওরায়ে হাদীস (মাস্টার্স) পর্যন্ত।
+            ফিকহ, তাফসীর ও হাদীসের গভীর পাণ্ডিত্য অর্জনের সুযোগ।</p>
+          <a href="#"
+            class="mt-auto text-[#A52A2A] font-bold hover:tracking-widest transition-all flex items-center text-sm">
+            বিস্তারিত দেখুন <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-[1450px] mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center justify-between mb-8 border-b-2 border-gray-200 pb-4">
+            <h2 class="text-2xl font-black text-[#0F3D4E] flex items-center">
+              <span class="w-2 h-8 bg-[#A52A2A] mr-3 rounded-full"></span>
+              নোটিশ বোর্ড
+            </h2>
+            <a href="#" class="text-[#A52A2A] text-sm font-bold hover:underline">সকল নোটিশ দেখুন</a>
+          </div>
+
+          <div class="bg-white rounded-[2rem] shadow-xl shadow-blue-900/5 overflow-hidden border border-white">
+            <ul class="divide-y divide-gray-50">
+              <li class="p-6 hover:bg-gray-50 transition-colors flex items-start group">
+                <div
+                  class="bg-[#0F3D4E] text-white px-4 py-2 rounded-xl text-xs font-bold mr-5 text-center shrink-0 shadow-lg">
+                  <span class="block text-xl font-black">১২</span>
+                  <span class="uppercase opacity-80">জানু</span>
+                </div>
+                <div>
+                  <a href="#"
+                    class="font-bold text-[#0F3D4E] text-lg group-hover:text-[#A52A2A] transition-colors block mb-1">প্রথম
+                    সাময়িক পরীক্ষার রুটিন প্রকাশ</a>
+                  <p class="text-sm text-gray-500">২০২৪-২৫ শিক্ষাবর্ষের সকল তালিবে ইলমদের জানানো যাচ্ছে যে...</p>
+                </div>
+              </li>
+              <li class="p-6 hover:bg-gray-50 transition-colors flex items-start group">
+                <div
+                  class="bg-[#0F3D4E] text-white px-4 py-2 rounded-xl text-xs font-bold mr-5 text-center shrink-0 shadow-lg">
+                  <span class="block text-xl font-black">০৮</span>
+                  <span class="uppercase opacity-80">জানু</span>
+                </div>
+                <div>
+                  <a href="#"
+                    class="font-bold text-[#0F3D4E] text-lg group-hover:text-[#A52A2A] transition-colors block mb-1">ভর্তি
+                    সংক্রান্ত জরুরী বিজ্ঞপ্তি - ২০২৫</a>
+                  <p class="text-sm text-gray-500">আগামী ১০ই জানুয়ারি থেকে নতুন শিক্ষাবর্ষের ভর্তি কার্যক্রম শুরু
+                    হবে...</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1">
+          <div class="mb-8 border-b-2 border-gray-200 pb-4">
+            <h2 class="text-2xl font-black text-[#0F3D4E]">জরুরী সেবা</h2>
+          </div>
+          <div class="space-y-4">
+            <a href="#"
+              class="group block bg-white p-5 rounded-2xl shadow-sm border-l-4 border-[#A52A2A] hover:shadow-xl transition-all flex items-center">
+              <div
+                class="w-12 h-12 bg-[#A52A2A]/10 rounded-full flex items-center justify-center text-[#A52A2A] mr-4 group-hover:bg-[#A52A2A] group-hover:text-white transition-all">
+                📝
+              </div>
+              <span class="font-bold text-[#0F3D4E]">অনলাইন ভর্তি আবেদন</span>
+            </a>
+            <a href="#"
+              class="group block bg-white p-5 rounded-2xl shadow-sm border-l-4 border-[#0F3D4E] hover:shadow-xl transition-all flex items-center">
+              <div
+                class="w-12 h-12 bg-[#0F3D4E]/10 rounded-full flex items-center justify-center text-[#0F3D4E] mr-4 group-hover:bg-[#0F3D4E] group-hover:text-white transition-all">
+                📊
+              </div>
+              <span class="font-bold text-[#0F3D4E]">ফলাফল দেখুন</span>
+            </a>
+            <a href="#"
+              class="group block bg-white p-5 rounded-2xl shadow-sm border-l-4 border-[#A52A2A] hover:shadow-xl transition-all flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center text-[#0F3D4E] mr-4 group-hover:bg-[#A52A2A] group-hover:text-white transition-all">
+                💰
+              </div>
+              <span class="font-bold text-[#0F3D4E]">দান/অনুদান পাঠান</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-[1450px] mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-black text-[#0F3D4E] mb-12">আমাদের <span
+          class="text-[#A52A2A]">বৈশিষ্ট্যসমূহ</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div
+          class="p-8 border-2 border-gray-50 rounded-[2rem] hover:border-[#A52A2A] hover:shadow-xl transition-all duration-300 group">
+          <div class="text-[#A52A2A] mb-4 flex justify-center transform group-hover:scale-110 transition-transform">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-[#0F3D4E] mb-2">মনোরম পরিবেশ</h3>
+          <p class="text-gray-500 text-sm">কোলাহলমুক্ত, শান্ত ও প্রাকৃতিক মনোরম পরিবেশে পাঠদান।</p>
+        </div>
+        <div
+          class="p-8 border-2 border-gray-50 rounded-[2rem] hover:border-[#A52A2A] hover:shadow-xl transition-all duration-300 group">
+          <div class="text-[#A52A2A] mb-4 flex justify-center transform group-hover:scale-110 transition-transform">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-[#0F3D4E] mb-2">উন্নত আবাসন</h3>
+          <p class="text-gray-500 text-sm">ছাত্রদের জন্য স্বাস্থ্যসম্মত ও পরিচ্ছন্ন আবাসনের সুব্যবস্থা।</p>
+        </div>
+        <div
+          class="p-8 border-2 border-gray-50 rounded-[2rem] hover:border-[#A52A2A] hover:shadow-xl transition-all duration-300 group">
+          <div class="text-[#A52A2A] mb-4 flex justify-center transform group-hover:scale-110 transition-transform">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-[#0F3D4E] mb-2">সমৃদ্ধ কুতুবখানা</h3>
+          <p class="text-gray-500 text-sm">দুষ্প্রাপ্য ও প্রয়োজনীয় কিতাবসম্বলিত বিশাল লাইব্রেরি।</p>
+        </div>
+        <div
+          class="p-8 border-2 border-gray-50 rounded-[2rem] hover:border-[#A52A2A] hover:shadow-xl transition-all duration-300 group">
+          <div class="text-[#A52A2A] mb-4 flex justify-center transform group-hover:scale-110 transition-transform">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-[#0F3D4E] mb-2">দক্ষ বাবুর্চি</h3>
+          <p class="text-gray-500 text-sm">অভিজ্ঞ বাবুর্চি দ্বারা স্বাস্থ্যসম্মত খাবার পরিবেশন।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 relative overflow-hidden">
+    <div class="max-w-[1550px] mx-auto px-4 relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div class="text-center md:text-left">
+          <span
+            class="text-[#A52A2A] font-bold tracking-[0.3em] text-xs uppercase border-b-2 border-[#A52A2A] pb-1">আমাদের
+            গ্যালারি</span>
+          <h2 class="text-3xl md:text-5xl font-black text-[#0F3D4E] mt-4">জামিয়ার <span class="text-[#A52A2A]">স্মরণীয়
+              মুহূর্ত</span></h2>
+        </div>
+        <a href="jamiaalbume.html"
+          class="mt-8 md:mt-0 group inline-flex items-center gap-2 px-8 py-4 bg-[#0F3D4E] text-white font-bold rounded-full shadow-xl hover:bg-[#A52A2A] transition-all">
+          সকল ছবি দেখুন
+          <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[250px]">
+        <div class="lg:col-span-2 lg:row-span-2 relative group rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <img src="/08.jpg"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F3D4E] via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-0 left-0 p-8">
+            <span
+              class="bg-[#A52A2A] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-3 inline-block uppercase">হাইলাইট</span>
+            <h3 class="text-white text-3xl font-bold leading-tight">বার্ষিক সীরাত মাহফিল ও পুরস্কার বিতরণী</h3>
+          </div>
+        </div>
+        <div class="relative group rounded-[2rem] overflow-hidden bg-black shadow-lg">
+          <img src="/15.jpg"
+            class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="w-16 h-16 bg-[#A52A2A] rounded-full flex items-center justify-center text-white shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current pl-1" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-5 left-6 text-white font-bold">বক্তব্য</div>
+        </div>
+        <div class="relative group rounded-[2rem] overflow-hidden shadow-lg border border-gray-100">
+          <img src="/11.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="relative group rounded-[2rem] overflow-hidden shadow-lg border border-gray-100">
+          <img src="/13.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="relative group rounded-[2rem] overflow-hidden bg-black shadow-lg">
+          <img src="/17.jpg"
+            class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="w-16 h-16 bg-[#A52A2A] rounded-full flex items-center justify-center text-white shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current pl-1" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+          <div class="absolute bottom-5 left-6 text-white font-bold">ডকুমেন্টারি</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0F3D4E] text-gray-300 pt-20">
+    <div class="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 pb-16">
+        <div class="text-center md:text-left">
+          <img src="/logo.png" alt="Logo" class="h-20 mb-8 mx-auto md:mx-0 brightness-200" />
+          <h3 class="text-2xl font-bold text-white mb-4">মারকাযুত তারবিয়াহ বাংলাদেশ</h3>
+          <p class="text-gray-400 text-sm leading-7">সহীহ দ্বীনি শিক্ষা ও নৈতিকতা বিকাশের একটি অনন্য প্রতিষ্ঠান। আমরা
+            প্রতিশ্রুতিবদ্ধ এক আদর্শ জাতি গঠনে।</p>
+          <div class="flex space-x-5 mt-8 justify-center md:justify-start">
+            <a href="https://www.facebook.com/mtbd.official" target="_blank"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#A52A2A] transition-all text-white"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@mtbd.official" target="_blank"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-600 transition-all text-white"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="text-xl font-bold text-white mb-8 relative inline-block">
+            দ্রুত লিংক
+            <span class="absolute -bottom-2 left-0 w-12 h-1 bg-[#A52A2A]"></span>
+          </h4>
+          <ul class="space-y-4">
+            <li><a href="about.html"
+                class="hover:text-white transition-colors flex items-center justify-center md:justify-start"> <span
+                  class="text-[#A52A2A] mr-2">»</span> আমাদের সম্পর্কে</a></li>
+            <li><a href="admition.html"
+                class="hover:text-white transition-colors flex items-center justify-center md:justify-start"> <span
+                  class="text-[#A52A2A] mr-2">»</span> ভর্তি তথ্য</a></li>
+            <li><a href="#"
+                class="hover:text-white transition-colors flex items-center justify-center md:justify-start"> <span
+                  class="text-[#A52A2A] mr-2">»</span> ফলাফল</a></li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="text-xl font-bold text-white mb-8 relative inline-block">
+            যোগাযোগ
+            <span class="absolute -bottom-2 left-0 w-12 h-1 bg-[#A52A2A]"></span>
+          </h4>
+          <ul class="space-y-5 text-sm">
+            <li class="flex items-start justify-center md:justify-start">
+              <span class="text-[#A52A2A] mr-4 text-lg"><i class="fas fa-map-marker-alt"></i></span>
+              <span>রূপগঞ্জ, নারায়ণগঞ্জ, ঢাকা - ১২৩৪</span>
+            </li>
+            <li class="flex items-center justify-center md:justify-start">
+              <span class="text-[#A52A2A] mr-4 text-lg"><i class="fas fa-phone-alt"></i></span>
+              <span>+৮৮০ ১৩০৯০৯৫৬৩১</span>
+            </li>
+            <li class="flex items-center justify-center md:justify-start">
+              <span class="text-[#A52A2A] mr-4 text-lg"><i class="fas fa-envelope"></i></span>
+              <span>rahmania.official1986@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/5 py-8 bg-[#0a2b38]">
+      <div
+        class="max-w-[1550px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>&copy; <span id="yearSpan"></span> মারকাযুত তারবিয়াহ বাংলাদেশ। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="mt-4 md:mt-0 font-outfit">কারিগরি সহযোগিতায়: <a href="#" class="text-white hover:text-[#A52A2A]">XYZ
+            IT
+            Solutions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
