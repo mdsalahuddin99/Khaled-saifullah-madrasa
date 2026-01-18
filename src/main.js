@@ -103,10 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 8. Footer Copyright Year Update Logic ---
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+    // --- 9. Scroll Reveal Animation Logic ---
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
 
 });
 

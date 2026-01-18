@@ -1,3 +1,3 @@
-# Khaled-saifullah-madrasa
+# Markazut Tarbiyah Bangladesh
 
-This is the repository for the Jamia Islamia Darul Uloom Rupganj website.
+This is the repository for the Markazut Tarbiyah Bangladesh website.
