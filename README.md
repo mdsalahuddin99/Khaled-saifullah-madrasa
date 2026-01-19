@@ -1,3 +1,3 @@
-# Markazut Tarbiyah Bangladesh
+# jamia-website
 
-This is the repository for the Markazut Tarbiyah Bangladesh website.
+This is the repository for the jamia-website.

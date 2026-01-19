@@ -14,7 +14,8 @@
   body {
     font-family: 'Kalpurush', 'Hind Siliguri', sans-serif;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: #ffffff;
+    /* Base color */
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
   }
@@ -29,9 +30,16 @@
     background-image: url('/bg-pattern.png');
     background-repeat: repeat;
     background-size: 400px;
-    opacity: 0.03;
+    opacity: 0.35;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
+    /* Changed from -1 to 0 to be in front of body background */
+  }
+
+  /* Ensure all main content is above the background pattern */
+  body>* {
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: 768px) {
